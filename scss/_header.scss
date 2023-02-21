@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 35px 0 30px;
+
+    .nav__logo {
+        img {
+            display: block;
+        }
+    }
+
+    .nav__menu {
+        width: 40%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding:0;
+            list-style-type: none;
+    
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 16px; 
+            color: #555248;     
+        }
+    }
+
+    .nav__personal {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        width: 99px;
+        .nav__personal-item {
+            height: 16px;
+        }
+    }
+}

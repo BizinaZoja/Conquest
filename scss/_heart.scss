@@ -1,0 +1,24 @@
+.nav__personal-likes {
+    position: relative;
+    display: inline-block;
+
+    width: 19px;
+
+    .likes-count {
+        position: absolute;
+        top: -4px;
+        right: -7px;
+
+        width: 13px;
+        height: 13px;
+
+        border-radius: 50%;
+        background-color: #E6C8B4;
+
+        font-family: 'Roboto';
+        font-size: 8px;
+        line-height: 13px;
+
+        text-align: center;
+    } 
+}
