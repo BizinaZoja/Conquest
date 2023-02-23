@@ -49,6 +49,11 @@
 }
 .nav .nav__personal .nav__personal-item {
   height: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.nav .nav__personal .nav__personal-item:hover {
+  filter: drop-shadow(0px 7px 7px rgba(85, 82, 72, 0.4862745098));
 }
 
 .btn {
@@ -62,9 +67,11 @@
   text-transform: uppercase;
   border: none;
   color: #FFFFFF;
+  transition: all 0.2s ease;
 }
 .btn:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.25));
 }
 
 .dark-btn {
@@ -132,6 +139,9 @@ body {
 
 header {
   background-color: #FDFDFB;
+  z-index: 10;
+  position: sticky;
+  top: 0;
 }
 
 h1 {
@@ -172,9 +182,13 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.2s ease;
+}
+a:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.hero .hero__content .hero__content-text .title .line {
+.line {
   content: "";
   position: absolute;
   top: 45%;
@@ -186,9 +200,11 @@ a {
 
 .hero {
   background-color: #FDFDFB;
+  margin-top: -5%;
 }
 .hero .hero__content {
-  width: 100%;
+  position: relative;
+  padding: 0 22px;
   display: flex;
   justify-content: space-between;
 }
@@ -198,24 +214,46 @@ a {
   justify-content: center;
   align-items: start;
   margin-left: 65px;
-  width: 35%;
+  width: 40%;
 }
 .hero .hero__content .hero__content-text .title {
   display: flex;
   position: relative;
 }
 .hero .hero__content .hero__content-text p {
+  max-width: 60%;
   font-size: 14px;
 }
 .hero .hero__content .hero__content-image {
-  margin-left: -30px;
-  background: url(/img/Ellipse.png) no-repeat;
+  position: relative;
+  top: 0;
+  left: -10%;
+  width: 60%;
+  height: 100%;
+  text-align: end;
+  background: url(/img/Ellipse.png) no-repeat bottom left;
+}
+.hero .hero__content .hero__content-image .hero-img-price {
+  display: inline;
+  position: relative;
+  top: 150px;
+  right: 250px;
+}
+.hero .hero__content .hero__content-image .hero-img-price .line {
+  left: 70px;
+}
+.hero .hero__content .hero__content-image .hero-img-diametr {
+  display: inline;
+  position: relative;
+  margin-left: 65px;
+  position: relative;
+  top: 700px;
+  right: -115px;
 }
 .hero .hero__content .hero__content-image img {
-  width: 100%;
-  height: 97%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  position: relative;
+  right: -5%;
+  bottom: -33px;
 }
 
 .models .models__content {
@@ -223,6 +261,9 @@ a {
   margin-top: 80px;
   margin-bottom: 86px;
   text-align: center;
+}
+.models .models__content h2 {
+  margin-bottom: 52px;
 }
 .models .models__content .models__gallery {
   display: flex;
@@ -252,16 +293,29 @@ a {
   line-height: 16px;
   color: rgba(27, 26, 23, 0.82);
 }
+.models .models__content .models__gallery .model .model-img {
+  background: url(/img/Circle.png) no-repeat;
+}
 .models .models__content .models__gallery .model .show-more {
+  display: flex;
+  position: relative;
+  margin-left: 45px;
   font-family: "Playfair Display";
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 }
+.models .models__content .models__gallery .model .show-more .line {
+  left: -45px;
+  width: 30px;
+}
 .models .models__content .model__show-all {
   position: absolute;
-  top: 40px;
+  top: 36px;
   right: 0;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #C4C0B6;
 }
 
 .banner {
