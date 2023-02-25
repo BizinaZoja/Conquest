@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        /> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Conquest</title>
@@ -49,7 +53,7 @@
                         </div>
                         <h2>Коллекция</h2>
                         <p>Швейцарские часы в наличии в Москве
-                            и с доставкой по всему миру</p>
+                            и&nbsp;с доставкой по всему миру</p>
                         <div class="btn dark-btn">Смотреть каталог</div>
                     </div>
                     <div class="hero__content-image">
@@ -68,31 +72,39 @@
                         <div class="model">
                             <div class="model-name">RADO</div>
                             <div class="model-price">65 300 &#x20bd;</div>
-                            <div class="model-img"><img src="/img/watch_1.png" alt="watch"></div>
-                            <div class="show-more"><span class="line"></span>Подробнее</div>
+                            <div class="model-img">
+                                <img src="/img/watch_1.png" alt="watch">
+                            </div>
+                            <div class="show-more"><span class="line"></span>
+                                <a href="">Подробнее</a></div>
                         </div>
                         <div class="model">
                             <div class="model-name">BVLGARI</div>
                             <div class="model-price">81 700 &#x20bd;</div>
-                            <div class="model-img"><img src="/img/watch_3.png" alt="watch"></div>
-                            <div class="show-more"><span class="line"></span>Подробнее</div>
+                            <div class="model-img">
+                                <img src="/img/watch_3.png" alt="watch">
+                            </div>
+                            <div class="show-more"><span class="line"></span><a href="">Подробнее</a></div>
                         </div>
                         <div class="model">
                             <div class="model-name">BVLGARI</div>
                             <div class="model-price">72 700 &#x20bd;</div>
-                            <div class="model-img"><img src="/img/watch_4.png" alt="watch"></div>
-                            <div class="show-more"><span class="line"></span>Подробнее</div>
+                            <div class="model-img">
+                                <img src="/img/watch_4.png" alt="watch">
+                            </div>
+                            <div class="show-more"><span class="line"></span><a href="">Подробнее</a></div>
                         </div>
                     </div>
-                    <div class="model__show-all">Смотреть все</div>
+                    <div class="model__show-all"><a href="">Смотреть все</a></div>
                 </div>
             </div>
         </section>
         <section class="banner">
             <div class="container">
                 <div class="banner__content">
+                    <div class="banner-bg"></div>
                     <div class="banner-image">
-                        <img src="img/photo_banner.webp" alt="banner">
+                        <img src="img/photo_banner.jpg" alt="banner">
                     </div>
                     <div class="banner-text">
                         <h2>Подлинное качество</h2>
@@ -109,15 +121,21 @@
                         <h2>Следите за нашими новостями</h2>
                         <p>Подписывайтесь на <span>@conquest_watch</span> в соцсетях и узнавайте о новинках и акциях первыми.</p>
                         <div class="social-media">
-                            <img src="icons/instagram_icon.svg" alt="instagram">
-                            <img src="icons/facebook_icon.svg" alt="facebook">
-                            <img src="icons/twitter_icon.svg" alt="twitter">
+                            <a href=""><img src="icons/instagram_icon.svg" alt="instagram"></a>
+                            <a href=""><img src="icons/facebook_icon.svg" alt="facebook"></a>
+                            <a href=""><img src="icons/twitter_icon.svg" alt="twitter"></a>
                         </div>
                     </div>
                     <div class="social-gallery">
-                        <img src="img/photo_1.webp" alt="watch" class="small-img">
-                        <img src="img/photo_2.webp" alt="watch" class="small-img">
-                        <img src="img/photo_3.webp" alt="watch" class="large-img">
+                        <div class="social-gallery-img small-img">
+                            <a href=""><img src="img/photo_1.jpg" alt="watch"></a>
+                        </div>
+                        <div class="social-gallery-img small-img">
+                            <a href=""><img src="img/photo_2.jpg" alt="watch"></a>
+                        </div>
+                        <div class="social-gallery-img large-img">
+                            <a href=""><img src="img/photo_3.jpg" alt="watch"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,6 +184,7 @@
             </div>
         </div>
     </footer>
-    
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
 </body>
 </html>
